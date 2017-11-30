@@ -10,8 +10,9 @@ mv fronty myProject && cd $_
 
 ## Set your own git repository to start a fresh new project
 ```
-rm -rf .git
+rm -rf .git && rm README.md
 git init
+git remote add origin https://github.com/username/myProject.git
 ```
 
 ## Run and build something nice
