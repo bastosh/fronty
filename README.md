@@ -65,7 +65,7 @@ gulp dist
 Once you're good to go, run this command to build the production folder, with minified CSS and JS, each concatenated in a single file.
 
 ## Deploy (Github Pages)
-
+The first time you deploy:
 ```
 git checkout --orphan gh-pages
 git commit -m "Initial commit" --allow-empty
@@ -74,3 +74,12 @@ git push origin gh-pages
 gulp deploy
 ```
 Visit ```https://username.github.io/myProject/```
+
+Then:
+```
+git checkout master
+
+// Do some great stuff
+
+gulp dist && gulp deploy
+```
