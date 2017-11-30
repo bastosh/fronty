@@ -5,6 +5,7 @@ module.exports = {
   'js/*.js',
   ],
 
+  // Example – Install jQuery via npm if needed
   JS_DEPS: [
     'node_modules/jquery/dist/jquery.js',
   ],
@@ -17,6 +18,7 @@ module.exports = {
     'ios >= 7',
   ],
 
+  // Example – Install Bootstrap via npm if needed
   CSS_DEPS: [
     'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
   ],
