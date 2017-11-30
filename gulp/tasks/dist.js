@@ -6,17 +6,15 @@ var rimraf = require('rimraf').sync;
 var useref = require('gulp-useref');
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
-
-
 var CONFIG = require('../config.js');
 
 // Erases the dist folder
-gulp.task('cleanDist', function() {
+gulp.task('cleanDist', function () {
   rimraf('dist');
 });
 
 // Copies static assets
-gulp.task('copyDist', function() {
+gulp.task('copyDist', function () {
   gulp.src(CONFIG.DIST_FILES)
     .pipe(gulp.dest('dist'));
 });
@@ -27,4 +25,4 @@ gulp.task('useref', function () {
         .pipe(gulpif('*.css', cssnano()))
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulp.dest('dist'));
-});
+  });

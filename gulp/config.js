@@ -2,11 +2,11 @@ module.exports = {
 
   // Javascript
   JS_FILES: [
-  'js/*.js'
+  'js/*.js',
   ],
 
   JS_DEPS: [
-    'node_modules/jquery/dist/jquery.js'
+    'node_modules/jquery/dist/jquery.js',
   ],
 
   // CSS
@@ -14,11 +14,11 @@ module.exports = {
     'last 2 versions',
     'ie >= 9',
     'Android >= 2.3',
-    'ios >= 7'
+    'ios >= 7',
   ],
 
   CSS_DEPS: [
-    'node_modules/bootstrap/dist/css/bootstrap-reboot.css'
+    'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
   ],
 
   DIST_FILES: [
@@ -29,7 +29,7 @@ module.exports = {
     'src/404.html',
     'src/browserconfig.xml',
     'src/humans.txt',
-    'src/robots.txt'
+    'src/robots.txt',
   ],
 
 };

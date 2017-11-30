@@ -11,12 +11,12 @@ requireDir('./gulp/tasks');
 gulp.task('build', ['clean', 'copy', 'pug', 'stylus', 'javascript']);
 
 // Starts a BrowerSync instance
-gulp.task('serve', ['build'], function(){
-  browser.init({server: './_build', port: port});
+gulp.task('serve', ['build'], function () {
+  browser.init({ server: './_build', port: port });
 });
 
 // Watch files for changes
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(['src/index.pug', 'src/pug/**/*'], ['pug', browser.reload]);
   gulp.watch('src/stylus/**/*', ['stylus', browser.reload]);
 });

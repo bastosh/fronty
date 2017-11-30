@@ -9,7 +9,7 @@ gulp.task('pug', function () {
     return gulp.src('src/index.pug')
         .pipe(plumber())
         .pipe(pug({
-            pretty: true
-        }))
+            pretty: true,
+          }))
         .pipe(gulp.dest('./_build'));
-});
+  });
