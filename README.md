@@ -1,6 +1,6 @@
 # Front-end project starter – Gulp, Stylus, Pug
 
-## Go to your workspace, clone the project, rename and go to
+## Go to your workspace, clone the project, rename and go inside
 
 ```
 cd Workspace
@@ -14,20 +14,7 @@ rm -rf .git && rm README.md
 git init
 git remote add origin https://github.com/username/myProject.git
 ```
-
-## Run and build something nice
-```
-npm i && gulp
-```
-A \_build folder is created with all your project files and Browsersync is running. You can work and see the changes.
-
-## Go to production
-```
-gulp dist
-```
-Once you're good to go, run this command to build the production folder, with minified CSS and JS, each concatenated in a single file.
-
-## Install dependencies
+## Install dependencies (optional)
 
 Use a package manager to install your dependencies:
 ```
@@ -64,3 +51,26 @@ block scripts
   script(src='js/main.js')
   // endbuild
 ```
+
+## Run and build something nice
+```
+npm i && gulp
+```
+A \_build folder is created with all your project files and Browsersync is running. You can work and see the changes.
+
+## Go to production
+```
+gulp dist
+```
+Once you're good to go, run this command to build the production folder, with minified CSS and JS, each concatenated in a single file.
+
+## Deploy (Github Pages)
+
+```
+git checkout --orphan gh-pages
+git commit -m "Initial commit" --allow-empty
+git push origin gh-pages
+
+gulp deploy
+```
+Visit ```https://username.github.io/myProject/```
