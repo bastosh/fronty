@@ -22,6 +22,7 @@ module.exports = {
   ],
 
   DIST_FILES: [
+    'src/img',
     'src/favicon.ico',
     'src/icon.png',
     'src/tile.png',
