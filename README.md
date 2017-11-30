@@ -7,6 +7,13 @@ cd Workspace
 git clone https://github.com/bastosh/fronty.git
 mv fronty myProject && cd $_
 ```
+
+## Set your own git repository to start a fresh new project
+```
+rm -rf .git
+git init
+```
+
 ## Run and build something nice
 ```
 npm i && gulp
