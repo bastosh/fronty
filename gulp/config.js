@@ -35,4 +35,8 @@ module.exports = {
     'src/robots.txt',
   ],
 
+  IMG: [
+    'src/img/*.*',
+  ],
+
 };

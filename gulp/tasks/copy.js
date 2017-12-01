@@ -12,4 +12,6 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('_build/js/vendors'));
   gulp.src(CONFIG.DIST_FILES)
     .pipe(gulp.dest('_build'));
+  gulp.src(CONFIG.IMG)
+  .pipe(gulp.dest('_build/img'));
 });

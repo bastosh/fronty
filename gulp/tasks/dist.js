@@ -17,6 +17,8 @@ gulp.task('cleanDist', function () {
 gulp.task('copyDist', function () {
   gulp.src(CONFIG.DIST_FILES)
     .pipe(gulp.dest('dist'));
+  gulp.src(CONFIG.IMG)
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('useref', function () {
