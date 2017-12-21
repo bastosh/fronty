@@ -1,4 +1,4 @@
-# Front-end project starter – Gulp, Stylus, Pug
+# Front-end starter – Gulp, Stylus, Pug
 
 ## Go to your workspace, clone the project, rename and go inside
 

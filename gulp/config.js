@@ -7,7 +7,7 @@ module.exports = {
 
   // Example – Install jQuery via npm if needed
   JS_DEPS: [
-    'node_modules/jquery/dist/jquery.js',
+    //'node_modules/jquery/dist/jquery.js',
   ],
 
   // CSS
@@ -20,11 +20,10 @@ module.exports = {
 
   // Example – Install Bootstrap via npm if needed
   CSS_DEPS: [
-    'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
+    //'node_modules/bootstrap/dist/css/bootstrap-reboot.css',
   ],
 
   DIST_FILES: [
-    'src/img',
     'src/favicon.ico',
     'src/icon.png',
     'src/tile.png',

@@ -1,7 +1,7 @@
 {
   "name": "fronty",
   "version": "0.1.0",
-  "description": "Front-end framework project",
+  "description": "Front-end starter",
   "scripts": {
     "start": "gulp"
   },
